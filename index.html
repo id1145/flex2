@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ch-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>flex.jpg</title>
+    <style>
+      body {
+        margin: 0;
+        height: 100vh; /*身体部分*/
+        display: flex;
+        background-color: rgb(255, 176, 206);
+        flex-direction: column;
+      }
+      .fx {
+        display: flex; /*弹性盒子*/
+      }
+      .bt {
+        border: 0;
+        background-color: rgb(255, 163, 186); /*按钮部分*/
+        position: absolute;
+        width: 7vh;
+        height: 7vh;
+        margin: 5vh;
+        border-radius: 2vh;
+        font-size: 6vh;
+        cursor: pointer;
+        position: fixed;
+      }
+      .ce {
+        background-color: rgb(223, 213, 216); /*侧边*/
+        width: 20vh;
+        position: absolute;
+        height: 100vh;
+        margin-top: 16vh;
+        border-radius: 0vh 3vh 3vh 0vh;
+        font-size: 10vh;
+        position: fixed;
+      }
+      .ding {
+        background-color: rgb(255, 109, 141);
+        width: 100vw;
+        height: 14vh;
+        margin-bottom: 2vh; /*顶部*/
+        justify-content: space-around;
+      }
+      .neiding {
+        height: 14vh;
+        width: 14vh;
+        font-size: 5vh;
+        align-items: center;
+        text-align: center;
+        margin-left: 18vh;
+      }
+      .xia {
+        background-color: rgb(255, 196, 221);
+        height: 10vh;
+        margin: 0vh 2vh 2vh 2vh;
+        border-radius: 2vh;
+        padding: 1vh;
+      }
+    </style>
+    <script>
+      function ddd() {
+        /*控制按钮部分*/
+        let aba = document.getElementById("aaa");
+        if (aba.style.display == "none") {
+          aba.style.display = "block";
+        } else {
+          aba.style.display = "none";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <input class="bt" type="button" value="≡" onclick="ddd();" />
+      <!--按钮-->
+    </div>
+    <div id="aaa" class="ce fx" style="display: none">听我说谢谢你</div>
+    <div class="ding fx">
+      <div class="neiding fx">a</div>
+      <div class="neiding fx">b</div>
+      <div class="neiding fx">c</div>
+    </div>
+    <div>
+      <div class="xia fx">Not Found</div>
+      <div class="xia fx">Not Found</div>
+      <div class="xia fx">Not Found</div>
+      <div class="xia fx">Not Found</div>
+      <div class="xia fx">Not Found</div>
+      <div class="xia fx">Not Found</div>
+      <div class="xia fx">Not Found</div>
+      <div class="xia fx">Not Found</div>
+      <div class="xia fx">Not Found</div>
+      <div class="xia fx">Not Found</div>
+      <div class="xia fx">Not Found</div>
+      <div class="xia fx">Not Found</div>
+      <div class="xia fx">Not Found</div>
+      <div class="xia fx">Not Found</div>
+    </div>
+  </body>
+</html>
